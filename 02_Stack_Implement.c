@@ -11,7 +11,7 @@ int item, restart, arr[6], HIGH = 6, max = -1;
 //Main function
 void main(){
     int option;
-PROCESS: //Goto function label
+PROCESS:  //Goto function label
     printf("Enter an option from the menu:\n1 for Push\n2 for Pop\n3 for View\n4 for Exit\n");
     scanf("%d", &option);
     switch (option){
