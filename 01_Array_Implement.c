@@ -21,7 +21,7 @@ PROCESS: //Goto function label
 	printf("Enter an option from the menu:\n1 for Insertion\n2 for Deletion\n3 for Linear Search\n4 for Exit\n");
 	scanf("%d", &option);
 	switch (option){
-		case 1: //For insertion
+		case 1:  //For insertion
 			printf("Enter the index at which the element is to be inserted: ");
 			scanf("%d", &index);
 			printf("Enter an element to be inserted: ");
