@@ -9,8 +9,8 @@ struct node{
 typedef struct node NODE;
 NODE *front = NULL, *rear = NULL;
 
-void insert(int);
-int delete();
+void enqueue(int);
+int dequeue();
 void show();
 
 void main(){
@@ -24,10 +24,10 @@ void main(){
             case 1:
                 printf("Enter an element: ") ;
                 scanf("%d", &num) ;
-                insert(num);
+                enqueue(num);
                 break ;
             case 2:
-                printf("Item: %d removed!\n", delete());
+                printf("Item: %d removed!\n", dequeue());
                 break ;
             case 3:
                 show();
@@ -37,7 +37,7 @@ void main(){
     }
 }
 
-void insert(int num){
+void enqueue(int num){
     NODE *new=(NODE*)malloc(sizeof(NODE));
     if(new==NULL)
         printf("No space in RAM!\n");
@@ -68,7 +68,8 @@ void show(){
     }
 }
 
-int delete(){
+//Deleting elements with ascending order priority
+int dequeue(){
     int  min;
     NODE *ptr, *ptr1, *temp, *temp1 ;
     if(front==NULL)
