@@ -1,4 +1,5 @@
 //Name: Mir Mozin
+//Assignment 1
 #include <stdio.h>
 #include <stdlib.h>
 
